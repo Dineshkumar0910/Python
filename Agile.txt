@@ -1,0 +1,23 @@
+Agile - scrum, kanban
+
+DUH - B2B, B2C - MOE
+
+GM,DGM - PD 1GM, Test & Devops 1 GM, IT,infra - 1GM
+
+Product dev - SW Engg, DB, Design
+
+PDM - PO - PM - TM's - Team1, Team2, Team3 etc
+
+QA - Module 1 test.....Module xxx(Automation, Functional, Regression, Performance, Cyber Security, Connectivity...)
+
+
+
+SW engg steps
+
+1. Requirements - PD M, PD O, BA
+2. Design - HLD, LLD - Architect
+3. Development 
+4. QA
+5. Maintainance
+
+CMMi
