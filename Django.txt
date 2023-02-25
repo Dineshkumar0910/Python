@@ -1,0 +1,27 @@
+Template loading in views:
+from django.shortcuts import render
+from django.http import HttpResponse
+from django.template import loader
+
+def index(request):
+    template = loader.get_template('sample.html')
+    return HttpResponse(template.render())
+
+
+App URLS:
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('blog/',views.index,name='index'),
+]
+
+Project URLS:
+from django.contrib import admin
+from django.urls import path,include
+from blog import views
+
+urlpatterns = [
+    path('',include('blog.urls')),
+    path('admin/', admin.site.urls),
+]
