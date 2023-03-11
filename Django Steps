@@ -1,0 +1,12 @@
+1. python version check (python --version)
+2. pip version check (pip --version)
+3. virtual environment check
+4. install django
+5. Project files check
+6. create django app
+7. Insert app name in project settings 'Installed Apps'
+8. app files check
+9. url in app inserted
+10. modify the views.py file
+11. connect views, urls in app, urls in project
+12. Run using manage.py 
