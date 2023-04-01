@@ -32,4 +32,15 @@ stu.html
 </body>
 </html>
 
- 
+model--update
+<!DOCTYPE html>
+<html>
+<body>
+    <h1> Students </h1>
+    <ol>
+        {% for x in mystu %}
+        <li>{{x.firstname}}{{x.lastname}}{{x.runs}}{{x.wickets}}</li>
+        {% endfor %}
+    </ol>
+</body>
+</html>
