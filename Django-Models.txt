@@ -1,0 +1,35 @@
+view.py
+
+from django.shortcuts import render
+from django.http import HttpResponse
+from django.template import loader
+from .models import student
+
+def Fita(request):
+    mystu = student.objects.all().values()
+    template = loader.get_template('student.html')
+    context = {
+        'mystu' : mystu,
+    }
+    return HttpResponse(template.render(context,request))
+
+models.pyfrom django.db import models
+
+class student(models.Model):
+    firstname = models.CharField(max_length=255)
+    lastname = models.CharField(max_length=255)
+
+stu.html
+<!DOCTYPE html>
+<html>
+<body>
+    <h1> Students </h1>
+    <ul>
+        {% for x in mystu %}
+        <li>{{x.firstname}}{{x.lastname}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
+ 
